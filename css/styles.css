@@ -1,11 +1,45 @@
-body {
-  background-color: #FFF8DC;
+
+  * { 
+    box-sizing: border-box;
+    }
+    
+    /* Create three unequal columns that floats next to each other */
+  .grid-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-column-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
 }
 
-h1, h4 {
-font-family: Arial;
+  #grad1 {
+    height: 400px;
+    width: 100%;
+   
+    background-image: url("https://jewelryjealousy.com/wp-content/uploads/bfi_thumb/mood-rings-njv7ahy75ss23cf4c4ti30nmyxc9x66myfxm70lvsi.jpg");
+  }
+ 
+ 
+h1 { 
+   font-size:125px; 
+   color: grey;
+   font-family: 'Jua', sans-serif;
+   text-align: center;
 }
-h1 {
-  background-color: #BDB76B;
-   font-size: 3em;
-}
+ 
+ p, h4, h3 {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+   }
+   #submit {
+     font: 20px;
+     font-family: sans-serif;
+     width: 100px;
+     height: 50px;
+     padding: 5px;
+   }
