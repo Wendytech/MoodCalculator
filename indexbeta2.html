@@ -1,7 +1,7 @@
-
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -9,13 +9,10 @@
   <meta name="description" content="Mood Calculator">
   <meta name="author" content="Wendy Anderson">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/mood.css" />
+  <link rel="stylesheet" href="css/mood2.css" />
 
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
+  <script src="js/script.js"></script>
   <!--
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -24,52 +21,136 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+</head>
 
 
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  /* Create three unequal columns that floats next to each other */
-  .column {
-      float: left;
-      padding: 10px;
-  }
+<body>
+  <header>
+  <div id="grad1" style="margin:auto;color:black">
+    <div class="content-wrap">
+      <div class="column-wide">
+        <h1>Mood Ring</h1>
+      </div>
+    </div>
+  </div>
+</header>
+  
+  <div class="grid-container">
+      <div>
+        <h4>Color and Mood</h4>
+          <p>Just for fun, take this funky little quiz that determines your mood. There isn't any scientific basis to the questions. The goal is for you to snicker a little, laugh a little, or wonder "what the heck were they thinking?", as you answer the wacky questions.
+          Add a little levity to your day by taking the Mood Ring Quiz. Please provide a response to each question. When you are done, Click Submit and watch the colors change. “Colour communicates critical information about the world; it is a source of
+          stimulation and pleasure; it shapes and activates space; and it holds psychological and cultural association that facilitate communication.”</p>
 
-  /* Left and right column */
-  .column.side {
-      width: 25%;
-  }
+          <br>
+          <br>
+          <p><small>Jim Lon The New Munsell Student Color Set(Fourth Edition, 2016)</small></p>
+       </div>  
+          
+         
+          <div><form>
+            <h3>Questions</h3>
+            <form action="/action_page.php" id=quiz name=quiz>
+              <p class="questions">Have you ever eaten Alligator meat?<p>
 
-  /* Middle column */
-  .column.middle {
-      width: 75%;
-  }
+              <input type="radio" name="question1" value="Yes">Yes
+              <input type="radio" name="question1" value="No">No
 
-  /* Clear floats after the columns */
-  .row:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-  #grad1 {
-    height: 300px;
-    width: 1500px;
-    background-image: url("https://jewelryjealousy.com/wp-content/uploads/bfi_thumb/mood-rings-njv7ahy75ss23cf4c4ti30nmyxc9x66myfxm70lvsi.jpg");
-  }
-  .box1 {
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-color: lightgrey;
-  }
-  .box2 {
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-color: lightgrey;
-    font-family: Ahem!, sans-serif;
-  }
+              <p class="questions">Have you ever told a knock knock joke and laughed at it, even though noone else was<br>laughing?</p>
+
+              <input type="radio" name="question2" value="Yes">Yes
+              <input type="radio" name="question2" value="No">No
+
+              <p class="questions">Do you enjoy celebrating your birthday?</p>
+
+              <input type="radio" name="question3" value="Yes">Yes
+              <input type="radio" name="question3" value="No">No
+
+              <p class="questions">Have you ever sang a song loudly and badly where others could hear you, yet you just did not care?</p>
+
+              <input type="radio" name="question4" value="Yes">Yes
+              <input type="radio" name="question4" value="No"> No
+
+              <p class="questions">Have you ever laughed uncontrollably while drinking a liquid or eating food?</p>
+
+              <input type="radio" name="question5" value="Yes">Yes
+              <input type="radio" name="question5" value="No">No
+
+              <p class="questions">Are you generally a happy person?</p>
+
+              <input type="radio" name="question6" value="Yes">Yes
+              <input type="radio" name="question6" value="No">No
+
+              <p class="questions">Have you ever tried to bribe a traffic cop to avoid a parking ticket?</p>
+
+              <input type="radio" name="question7" value="Yes">Yes
+              <input type="radio" name="question7" value="No">No
+
+              <p class="questions">Have you ever shaved your head for a good cause?</p>
+
+              <input type="radio" name="question8" value="Yes">Yes
+              <input type="radio" name="question8" value="No">No
+
+              <p class="questions">Have you ever been pranked by someone and then laughed after the joke was over?</p>
+
+              <input type="radio" name="question9" value="Yes">Yes
+              <input type="radio" name="question9" value="No">No
+
+              <p class="questions">Have you ever danced wildly to your favorite song, then eventually you were discovered but you did not stop?</p>
+
+              <input type="radio" name="question10" value="Yes">Yes
+              <input type="radio" name="question10" value="No">No
+
+              <p class="questions">Do you bingewatch any comedy television series?</p>
+
+              <input type="radio" name="question11" value="Yes">Yes
+              <input type="radio" name="question11" value="No">No
+
+              <p class="questions">Do you cry easily?</p>
+
+              <input type="radio" name="question12" value="Yes">Yes
+              <input type="radio" name="question12" value="No">No
+
+              <p class="questions">Do you sing in the shower?</p>
+
+              <input type="radio" name="question13" value="Yes">Yes
+              <input type="radio" name="question13" value="No">No
+              <br>
+              <br>
+
+            </form>
+            <button id="submit">Submit</button>
+         </div>
+            
+           <div>
+               <p style "text-align: center"><strong>Ring Colors</strong></p><br><br>
+              <p style="color:#006400" ;><b>Dark-Green</b></p>
+              <p style="color:#008000" ;><b>Green</b></p>
+              <p style="color:#00FF00" ;><b>Periodot-Green</b></p>
+              <p style="color:Yellow" ;><b>Yellow</b></p>
+              <p style="color:#FF7043" ;><b>Orange</b></p>
+              <p style="color:Red" ;><b>Red</b></p>
+              <p style="color:#FF00CC" ;><b>Magenta</b></p>
+              <p style="color:Purple" ;><b>Purple</b></p>
+              <p style="color:#0000CD" ;><b>Indigo Blue</b></p>
+                <p style="color:Blue" ;><b>Blue</b></p>
+              <p style="color:#34E8F0" ;><b>Skyblue</b></p>
+              <p style="color:Black" ;><b>Black</b></p>
+              <br>
+              <br>
+              <p><img src="img/moodring1.png" alt="mood rings" style="width:100px;height:75px;"></p>
+              <br><br><br>
+              <p id="score"></p>
+           </div>
+    </div>            
+  
+    
+      
+  </body>
+
+</html>
+
   </style>
 </head>
 <header>
